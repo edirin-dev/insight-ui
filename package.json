@@ -54,7 +54,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@dashevo/dp-services-ctl": "^0.14.0",
+    "@dashevo/dp-services-ctl": "https://github.com/edirin-dev/js-dp-services-ctl.git",
     "bower": "~1.8.8",
     "chai": "^4.2.0",
     "eslint": "^5.6.1",
