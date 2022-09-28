@@ -1,9 +1,9 @@
-FROM node:8-alpine
+FROM node:16-alpine
 
 RUN apk add --update --no-cache git \
                                 libzmq \
                                 zeromq-dev \
-                                python \
+                                python3 \
                                 make \
                                 g++
 
@@ -25,10 +25,10 @@ ARG MAJOR_VERSION
 RUN bin/dashcore-node install @dashevo/insight-api@${MAJOR_VERSION}
 RUN bin/dashcore-node install @dashevo/insight-ui@${VERSION}
 
-FROM node:8-alpine
+FROM node:16-alpine
 
-LABEL maintainer="Dash Developers <dev@dash.org>"
-LABEL description="Dockerised Insight-Dash"
+LABEL maintainer="Vkax Developers <dev@vkax.xyz>"
+LABEL description="Dockerised Insight-Vkax"
 
 WORKDIR /insight
 
